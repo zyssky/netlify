@@ -126,6 +126,18 @@
             padding: 15px;
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
+        .news-item-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        .news-item-link:hover .news-item {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+        }
+        .news-item-link:hover .news-title {
+            color: #ffd700;
+        }
         .news-item:last-child {
             border-bottom: none;
         }
@@ -233,12 +245,15 @@
                 const container = document.getElementById('news-preview');
                 let html = '';
                 
-                data.news.slice(0, 3).forEach(item => {
+                data.news.slice(0, 5).forEach(item => {
+                    const newsUrl = item.url || '/ai-news/';
                     html += `
-                    <div class="news-item">
-                        <div class="news-title">${item.title}</div>
-                        <div class="news-source">${item.source} • ${item.time}</div>
-                    </div>`;
+                    <a href="${newsUrl}" target="_blank" rel="noopener noreferrer" class="news-item-link">
+                        <div class="news-item">
+                            <div class="news-title">${item.title}</div>
+                            <div class="news-source">${item.source} • ${item.time}</div>
+                        </div>
+                    </a>`;
                 });
                 
                 container.innerHTML = html;
@@ -246,18 +261,24 @@
                 console.log('资讯加载失败，显示示例数据');
                 const container = document.getElementById('news-preview');
                 container.innerHTML = `
-                <div class="news-item">
-                    <div class="news-title">🚀 AI资讯日报系统已上线</div>
-                    <div class="news-source">系统公告 • 刚刚</div>
-                </div>
-                <div class="news-item">
-                    <div class="news-title">🤖 自动化发布系统运行正常</div>
-                    <div class="news-source">技术更新 • 5分钟前</div>
-                </div>
-                <div class="news-item">
-                    <div class="news-title">🌐 Netlify自动部署配置完成</div>
-                    <div class="news-source">部署状态 • 10分钟前</div>
-                </div>`;
+                <a href="/ai-news/" class="news-item-link">
+                    <div class="news-item">
+                        <div class="news-title">🚀 AI资讯日报系统已上线</div>
+                        <div class="news-source">系统公告 • 刚刚</div>
+                    </div>
+                </a>
+                <a href="/ai-news/" class="news-item-link">
+                    <div class="news-item">
+                        <div class="news-title">🤖 自动化发布系统运行正常</div>
+                        <div class="news-source">技术更新 • 5分钟前</div>
+                    </div>
+                </a>
+                <a href="/ai-news/" class="news-item-link">
+                    <div class="news-item">
+                        <div class="news-title">🌐 Netlify自动部署配置完成</div>
+                        <div class="news-source">部署状态 • 10分钟前</div>
+                    </div>
+                </a>`;
             }
         }
         
