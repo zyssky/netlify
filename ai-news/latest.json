@@ -1,102 +1,86 @@
 {
-  "last_updated": "2026-04-05T19:34:45.177653",
-  "news_count": 12,
+  "last_updated": "2026-04-05T20:48:01.196801",
+  "news_count": 10,
   "news": [
     {
-      "title": "GitHub Copilot发布新功能：AI结对编程",
-      "summary": "GitHub宣布Copilot新增实时协作功能，提升团队开发效率，支持更多编程语言",
-      "url": "https://github.blog/category/copilot/",
-      "source": "GitHub官方博客",
-      "time": "2026-04-05 10:30",
-      "category": "开发工具"
+      "title": "Hackers Are Posting the Claude Code Leak With Bonus Malware",
+      "url": "https://www.wired.com/story/security-news-this-week-hackers-are-posting-the-claude-code-leak-with-bonus-malware/",
+      "summary": "Plus: The FBI says a recent hack of its wiretap tools poses a national security risk, attackers stole Cisco source code as part of an ongoing supply chain hacking spree, and more.",
+      "source": "Wired",
+      "time": "2026-04-04 10:30",
+      "category": "安全动态"
     },
     {
-      "title": "OpenAI研究进展：多模态理解能力提升",
-      "summary": "最新研究显示GPT-4V在视觉-语言任务上准确率显著提升，支持更复杂的多模态推理",
-      "url": "https://openai.com/research",
-      "source": "OpenAI研究",
-      "time": "2026-04-05 09:45",
-      "category": "技术突破"
+      "title": "Meta Pauses Work With Mercor After Data Breach Puts AI Industry Secrets at Risk",
+      "url": "https://www.wired.com/story/meta-pauses-work-with-mercor-after-data-breach-puts-ai-industry-secrets-at-risk/",
+      "summary": "Major AI labs are investigating a security incident that impacted Mercor, a leading data vendor. The incident could have exposed key data about how they train AI models.",
+      "source": "Wired",
+      "time": "2026-04-03 21:28",
+      "category": "商业资讯"
     },
     {
-      "title": "AI在药物发现中的突破性应用",
-      "summary": "AI技术显著缩短药物研发周期，多个候选药物进入临床试验阶段",
-      "url": "https://www.nature.com/subjects/artificial-intelligence",
-      "source": "Nature杂志",
-      "time": "2026-04-05 14:20",
+      "title": "OpenAI’s Fidji Simo Is Taking Medical Leave Amid an Executive Shake-Up",
+      "url": "https://www.wired.com/story/openais-fidji-simo-is-taking-a-leave-of-absence/",
+      "summary": "The company is undergoing major leadership restructuring as its CEO of AGI deployment goes on leave for “several weeks.”",
+      "source": "Wired",
+      "time": "2026-04-03 19:38",
+      "category": "商业资讯"
+    },
+    {
+      "title": "The 3 Best Portable Jump Starters in 2026: Get Charged Up",
+      "url": "https://www.wired.com/story/best-portable-jump-starters/",
+      "summary": "The new crop of portable jump starters means you'll never be stuck waiting on a tow. Here are the devices we'd trust.",
+      "source": "Wired",
+      "time": "2026-04-03 10:39",
+      "category": "产品评测"
+    },
+    {
+      "title": "‘Uncanny Valley’: Iran’s Threats on US Tech, Trump’s Plans for Midterms, and Polymarket’s Pop-up Flop",
+      "url": "https://www.wired.com/story/uncanny-valley-podcast-iran-targets-us-tech-polymarket-pop-up-trump-midterms/",
+      "summary": "In this episode, we discuss Iran’s threats to target US tech firms, gear up for the midterm elections, and get a scene report from the Polymarket pop-up bar in DC.",
+      "source": "Wired",
+      "time": "2026-04-02 21:04",
+      "category": "安全动态"
+    },
+    {
+      "title": "OpenAI Acquires Tech Talk Show ‘TBPN’—and Buys Itself Some Positive News",
+      "url": "https://www.wired.com/story/openai-acquires-tbpn-buys-positive-news-coverage/",
+      "summary": "OpenAI is acquiring TBPN, a business talk show that’s popular among Silicon Valley elites, as it continues to battle its negative public image.",
+      "source": "Wired",
+      "time": "2026-04-02 19:29",
+      "category": "商业资讯"
+    },
+    {
+      "title": "A New Google-Funded Data Center Will Be Powered by a Massive Gas Plant",
+      "url": "https://www.wired.com/story/a-new-google-funded-data-center-will-be-powered-by-a-massive-gas-plant/",
+      "summary": "Documents show that one of Google’s new data centers would be powered by a natural gas plant that emits millions of tons of emissions each year—an increasingly common trend in the industry.",
+      "source": "Wired",
+      "time": "2026-04-02 18:27",
       "category": "科学研究"
     },
     {
-      "title": "大语言模型推理成本大幅降低",
-      "summary": "新技术使LLM推理成本降低60%，加速AI应用商业化落地进程",
-      "url": "https://arxiv.org/list/cs.AI/recent",
-      "source": "arXiv论文",
-      "time": "2026-04-05 11:15",
-      "category": "技术优化"
+      "title": "Cursor Launches a New AI Agent Experience to Take On Claude Code and Codex",
+      "url": "https://www.wired.com/story/cusor-launches-coding-agent-openai-anthropic/",
+      "summary": "As Cursor launches the next generation of its product, the AI coding startup has to compete with OpenAI and Anthropic more directly than ever.",
+      "source": "Wired",
+      "time": "2026-04-02 17:00",
+      "category": "商业资讯"
     },
     {
-      "title": "AI编程助手使用率调查",
-      "summary": "最新调查显示，68%的开发者使用AI编程助手，工作效率平均提升35%",
-      "url": "https://stackoverflow.blog",
-      "source": "Stack Overflow",
-      "time": "2026-04-05 13:30",
-      "category": "行业调查"
+      "title": "Anthropic Says That Claude Contains Its Own Kind of Emotions",
+      "url": "https://www.wired.com/story/anthropic-claude-research-functional-emotions/",
+      "summary": "Researchers at the company found representations inside of Claude that perform functions similar to human feelings.",
+      "source": "Wired",
+      "time": "2026-04-02 16:00",
+      "category": "商业资讯"
     },
     {
-      "title": "边缘设备AI推理框架更新",
-      "summary": "TensorFlow Lite和ONNX Runtime推出新版，大幅提升移动端AI应用性能",
-      "url": "https://developer.nvidia.com/blog",
-      "source": "NVIDIA开发者",
-      "time": "2026-04-05 15:45",
-      "category": "开发框架"
-    },
-    {
-      "title": "AI在设计创意领域的应用",
-      "summary": "设计师使用AI工具完成设计工作，效率提升40%，创意产出增加",
-      "url": "https://techcrunch.com/tag/artificial-intelligence/",
-      "source": "TechCrunch",
-      "time": "2026-04-05 16:30",
-      "category": "行业应用"
-    },
-    {
-      "title": "开源AI模型社区持续壮大",
-      "summary": "Hugging Face平台模型下载量突破记录，社区活跃度创新高",
-      "url": "https://huggingface.co",
-      "source": "Hugging Face",
-      "time": "2026-04-05 12:00",
-      "category": "开源社区"
-    },
-    {
-      "title": "AI辅助个性化教育发展",
-      "summary": "AI学习系统分析学生进度，提供定制化学习路径，提升学习效果",
-      "url": "https://www.edx.org",
-      "source": "edX平台",
-      "time": "2026-04-05 17:15",
-      "category": "教育科技"
-    },
-    {
-      "title": "企业AI技术投入趋势",
-      "summary": "Gartner报告：85%的企业计划增加AI技术投入，重点关注自动化和数据分析",
-      "url": "https://www.gartner.com/en",
-      "source": "Gartner",
-      "time": "2026-04-05 18:00",
-      "category": "市场趋势"
-    },
-    {
-      "title": "AI在气候科学中的应用",
-      "summary": "研究人员使用AI模型预测气候变化趋势，精度比传统方法提高30%",
-      "url": "https://climate.nasa.gov",
-      "source": "NASA气候",
-      "time": "2026-04-05 19:30",
-      "category": "环境科学"
-    },
-    {
-      "title": "自动驾驶技术新进展",
-      "summary": "特斯拉、Waymo等公司更新自动驾驶系统，安全性和可靠性进一步提升",
-      "url": "https://www.tesla.com/ai",
-      "source": "特斯拉AI",
-      "time": "2026-04-05 20:15",
-      "category": "自动驾驶"
+      "title": "AI Models Lie, Cheat, and Steal to Protect Other Models From Being Deleted",
+      "url": "https://www.wired.com/story/ai-models-lie-cheat-steal-protect-other-models-research/",
+      "summary": "A new study from researchers at UC Berkeley and UC Santa Cruz suggests models will disobey human commands to protect their own kind.",
+      "source": "Wired",
+      "time": "2026-04-01 18:30",
+      "category": "商业资讯"
     }
   ]
 }

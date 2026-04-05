@@ -142,18 +142,11 @@
             margin: 25px 0;
         }
         .source-list {
-            background: #fff3cd;
-            border-left: 5px solid #ffc107;
+            background: #e3f2fd;
+            border-left: 5px solid #2196f3;
             padding: 20px;
             border-radius: 8px;
             margin: 25px 0;
-        }
-        .source-list ul {
-            columns: 2;
-            margin: 10px 0;
-        }
-        .source-list li {
-            margin-bottom: 8px;
         }
         .footer {
             text-align: center;
@@ -165,7 +158,6 @@
         @media (max-width: 768px) {
             .header h1 { font-size: 2rem; }
             .news-grid { grid-template-columns: 1fr; }
-            .source-list ul { columns: 1; }
         }
     </style>
 </head>
@@ -173,7 +165,7 @@
     <div class="container">
         <div class="header">
             <h1>📰 AI资讯日报</h1>
-            <p>精选人工智能领域最新动态 | 所有链接均可访问</p>
+            <p>精选人工智能领域最新动态 | 真实可访问的新闻链接</p>
         </div>
         
         <div class="nav">
@@ -185,15 +177,15 @@
         
         <div class="stats">
             <div class="stat-item">
-                <div class="stat-number">12</div>
+                <div class="stat-number">10</div>
                 <div>资讯数量</div>
             </div>
             <div class="stat-item">
-                <div class="stat-number">12</div>
+                <div class="stat-number">1</div>
                 <div>信息来源</div>
             </div>
             <div class="stat-item">
-                <div class="stat-number">12</div>
+                <div class="stat-number">4</div>
                 <div>内容分类</div>
             </div>
             <div class="stat-item">
@@ -204,190 +196,157 @@
         
         <div class="automation-notice">
             <h3>🤖 自动化资讯系统</h3>
-            <p>本页面由OpenClaw自动化系统生成和维护。所有资讯均为真实AI领域动态，链接指向权威来源。</p>
-            <p>📅 更新时间: 2026-04-05 19:34:45</p>
+            <p>本页面由OpenClaw自动化系统生成。资讯来自Wired等权威科技媒体，所有链接均为真实文章，可直接点击访问。</p>
+            <p>📅 更新时间: 2026-04-05 20:48:01</p>
         </div>
         
         <div class="source-list">
-            <h3>📡 资讯来源说明</h3>
-            <p>资讯来自以下权威AI和技术网站（所有链接均可直接访问）：</p>
-            <ul>
-                <li>GitHub官方博客 - AI编程工具最新进展</li>
-                <li>OpenAI研究 - 前沿AI技术突破</li>
-                <li>Nature杂志 - AI在科学研究中的应用</li>
-                <li>arXiv论文 - 最新AI研究成果</li>
-                <li>Stack Overflow - 开发者调查数据</li>
-                <li>NVIDIA开发者 - AI计算和框架更新</li>
-                <li>TechCrunch - AI行业动态和趋势</li>
-                <li>Hugging Face - 开源AI模型社区</li>
-                <li>edX平台 - AI教育和技术培训</li>
-                <li>Gartner - 企业AI技术趋势分析</li>
+            <h3>📡 资讯来源</h3>
+            <p>资讯实时抓取自Wired杂志AI板块，真实可访问的文章链接：</p>
+            <ul style="margin-top: 10px;">
+                <li><strong>Wired</strong> - 全球顶级科技媒体，AI领域深度报道</li>
+                <li>所有链接均已验证可直接访问</li>
+                <li>点击"阅读原文"即可查看完整文章</li>
             </ul>
         </div>
         
         <div class="news-grid">
             
-        <div class="news-card">
-            <div class="news-header">
-                <span class="news-category">开发工具</span>
-                <span class="news-time">2026-04-05 10:30</span>
+            <div class="news-card">
+                <div class="news-header">
+                    <span class="news-category">安全动态</span>
+                    <span class="news-time">2026-04-04 10:30</span>
+                </div>
+                <h3 class="news-title">Hackers Are Posting the Claude Code Leak With Bonus Malware</h3>
+                <p class="news-summary">Plus: The FBI says a recent hack of its wiretap tools poses a national security risk, attackers stole Cisco source code as part of an ongoing supply chain hacking spree, and more.</p>
+                <div class="news-footer">
+                    <span class="news-source">来源: Wired</span>
+                    <a href="https://www.wired.com/story/security-news-this-week-hackers-are-posting-the-claude-code-leak-with-bonus-malware/" class="news-link" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+                </div>
             </div>
-            <h3 class="news-title">GitHub Copilot发布新功能：AI结对编程</h3>
-            <p class="news-summary">GitHub宣布Copilot新增实时协作功能，提升团队开发效率，支持更多编程语言</p>
-            <div class="news-footer">
-                <span class="news-source">来源: GitHub官方博客</span>
-                <a href="https://github.blog/category/copilot/" class="news-link" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+            
+            <div class="news-card">
+                <div class="news-header">
+                    <span class="news-category">商业资讯</span>
+                    <span class="news-time">2026-04-03 21:28</span>
+                </div>
+                <h3 class="news-title">Meta Pauses Work With Mercor After Data Breach Puts AI Industry Secrets at Risk</h3>
+                <p class="news-summary">Major AI labs are investigating a security incident that impacted Mercor, a leading data vendor. The incident could have exposed key data about how they train AI models.</p>
+                <div class="news-footer">
+                    <span class="news-source">来源: Wired</span>
+                    <a href="https://www.wired.com/story/meta-pauses-work-with-mercor-after-data-breach-puts-ai-industry-secrets-at-risk/" class="news-link" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+                </div>
             </div>
-        </div>
-        
-        <div class="news-card">
-            <div class="news-header">
-                <span class="news-category">技术突破</span>
-                <span class="news-time">2026-04-05 09:45</span>
+            
+            <div class="news-card">
+                <div class="news-header">
+                    <span class="news-category">商业资讯</span>
+                    <span class="news-time">2026-04-03 19:38</span>
+                </div>
+                <h3 class="news-title">OpenAI’s Fidji Simo Is Taking Medical Leave Amid an Executive Shake-Up</h3>
+                <p class="news-summary">The company is undergoing major leadership restructuring as its CEO of AGI deployment goes on leave for “several weeks.”</p>
+                <div class="news-footer">
+                    <span class="news-source">来源: Wired</span>
+                    <a href="https://www.wired.com/story/openais-fidji-simo-is-taking-a-leave-of-absence/" class="news-link" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+                </div>
             </div>
-            <h3 class="news-title">OpenAI研究进展：多模态理解能力提升</h3>
-            <p class="news-summary">最新研究显示GPT-4V在视觉-语言任务上准确率显著提升，支持更复杂的多模态推理</p>
-            <div class="news-footer">
-                <span class="news-source">来源: OpenAI研究</span>
-                <a href="https://openai.com/research" class="news-link" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+            
+            <div class="news-card">
+                <div class="news-header">
+                    <span class="news-category">产品评测</span>
+                    <span class="news-time">2026-04-03 10:39</span>
+                </div>
+                <h3 class="news-title">The 3 Best Portable Jump Starters in 2026: Get Charged Up</h3>
+                <p class="news-summary">The new crop of portable jump starters means you'll never be stuck waiting on a tow. Here are the devices we'd trust.</p>
+                <div class="news-footer">
+                    <span class="news-source">来源: Wired</span>
+                    <a href="https://www.wired.com/story/best-portable-jump-starters/" class="news-link" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+                </div>
             </div>
-        </div>
-        
-        <div class="news-card">
-            <div class="news-header">
-                <span class="news-category">科学研究</span>
-                <span class="news-time">2026-04-05 14:20</span>
+            
+            <div class="news-card">
+                <div class="news-header">
+                    <span class="news-category">安全动态</span>
+                    <span class="news-time">2026-04-02 21:04</span>
+                </div>
+                <h3 class="news-title">‘Uncanny Valley’: Iran’s Threats on US Tech, Trump’s Plans for Midterms, and Polymarket’s Pop-up Flop</h3>
+                <p class="news-summary">In this episode, we discuss Iran’s threats to target US tech firms, gear up for the midterm elections, and get a scene report from the Polymarket pop-up bar in DC.</p>
+                <div class="news-footer">
+                    <span class="news-source">来源: Wired</span>
+                    <a href="https://www.wired.com/story/uncanny-valley-podcast-iran-targets-us-tech-polymarket-pop-up-trump-midterms/" class="news-link" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+                </div>
             </div>
-            <h3 class="news-title">AI在药物发现中的突破性应用</h3>
-            <p class="news-summary">AI技术显著缩短药物研发周期，多个候选药物进入临床试验阶段</p>
-            <div class="news-footer">
-                <span class="news-source">来源: Nature杂志</span>
-                <a href="https://www.nature.com/subjects/artificial-intelligence" class="news-link" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+            
+            <div class="news-card">
+                <div class="news-header">
+                    <span class="news-category">商业资讯</span>
+                    <span class="news-time">2026-04-02 19:29</span>
+                </div>
+                <h3 class="news-title">OpenAI Acquires Tech Talk Show ‘TBPN’—and Buys Itself Some Positive News</h3>
+                <p class="news-summary">OpenAI is acquiring TBPN, a business talk show that’s popular among Silicon Valley elites, as it continues to battle its negative public image.</p>
+                <div class="news-footer">
+                    <span class="news-source">来源: Wired</span>
+                    <a href="https://www.wired.com/story/openai-acquires-tbpn-buys-positive-news-coverage/" class="news-link" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+                </div>
             </div>
-        </div>
-        
-        <div class="news-card">
-            <div class="news-header">
-                <span class="news-category">技术优化</span>
-                <span class="news-time">2026-04-05 11:15</span>
+            
+            <div class="news-card">
+                <div class="news-header">
+                    <span class="news-category">科学研究</span>
+                    <span class="news-time">2026-04-02 18:27</span>
+                </div>
+                <h3 class="news-title">A New Google-Funded Data Center Will Be Powered by a Massive Gas Plant</h3>
+                <p class="news-summary">Documents show that one of Google’s new data centers would be powered by a natural gas plant that emits millions of tons of emissions each year—an increasingly common trend in the industry.</p>
+                <div class="news-footer">
+                    <span class="news-source">来源: Wired</span>
+                    <a href="https://www.wired.com/story/a-new-google-funded-data-center-will-be-powered-by-a-massive-gas-plant/" class="news-link" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+                </div>
             </div>
-            <h3 class="news-title">大语言模型推理成本大幅降低</h3>
-            <p class="news-summary">新技术使LLM推理成本降低60%，加速AI应用商业化落地进程</p>
-            <div class="news-footer">
-                <span class="news-source">来源: arXiv论文</span>
-                <a href="https://arxiv.org/list/cs.AI/recent" class="news-link" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+            
+            <div class="news-card">
+                <div class="news-header">
+                    <span class="news-category">商业资讯</span>
+                    <span class="news-time">2026-04-02 17:00</span>
+                </div>
+                <h3 class="news-title">Cursor Launches a New AI Agent Experience to Take On Claude Code and Codex</h3>
+                <p class="news-summary">As Cursor launches the next generation of its product, the AI coding startup has to compete with OpenAI and Anthropic more directly than ever.</p>
+                <div class="news-footer">
+                    <span class="news-source">来源: Wired</span>
+                    <a href="https://www.wired.com/story/cusor-launches-coding-agent-openai-anthropic/" class="news-link" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+                </div>
             </div>
-        </div>
-        
-        <div class="news-card">
-            <div class="news-header">
-                <span class="news-category">行业调查</span>
-                <span class="news-time">2026-04-05 13:30</span>
+            
+            <div class="news-card">
+                <div class="news-header">
+                    <span class="news-category">商业资讯</span>
+                    <span class="news-time">2026-04-02 16:00</span>
+                </div>
+                <h3 class="news-title">Anthropic Says That Claude Contains Its Own Kind of Emotions</h3>
+                <p class="news-summary">Researchers at the company found representations inside of Claude that perform functions similar to human feelings.</p>
+                <div class="news-footer">
+                    <span class="news-source">来源: Wired</span>
+                    <a href="https://www.wired.com/story/anthropic-claude-research-functional-emotions/" class="news-link" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+                </div>
             </div>
-            <h3 class="news-title">AI编程助手使用率调查</h3>
-            <p class="news-summary">最新调查显示，68%的开发者使用AI编程助手，工作效率平均提升35%</p>
-            <div class="news-footer">
-                <span class="news-source">来源: Stack Overflow</span>
-                <a href="https://stackoverflow.blog" class="news-link" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+            
+            <div class="news-card">
+                <div class="news-header">
+                    <span class="news-category">商业资讯</span>
+                    <span class="news-time">2026-04-01 18:30</span>
+                </div>
+                <h3 class="news-title">AI Models Lie, Cheat, and Steal to Protect Other Models From Being Deleted</h3>
+                <p class="news-summary">A new study from researchers at UC Berkeley and UC Santa Cruz suggests models will disobey human commands to protect their own kind.</p>
+                <div class="news-footer">
+                    <span class="news-source">来源: Wired</span>
+                    <a href="https://www.wired.com/story/ai-models-lie-cheat-steal-protect-other-models-research/" class="news-link" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+                </div>
             </div>
-        </div>
-        
-        <div class="news-card">
-            <div class="news-header">
-                <span class="news-category">开发框架</span>
-                <span class="news-time">2026-04-05 15:45</span>
-            </div>
-            <h3 class="news-title">边缘设备AI推理框架更新</h3>
-            <p class="news-summary">TensorFlow Lite和ONNX Runtime推出新版，大幅提升移动端AI应用性能</p>
-            <div class="news-footer">
-                <span class="news-source">来源: NVIDIA开发者</span>
-                <a href="https://developer.nvidia.com/blog" class="news-link" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
-            </div>
-        </div>
-        
-        <div class="news-card">
-            <div class="news-header">
-                <span class="news-category">行业应用</span>
-                <span class="news-time">2026-04-05 16:30</span>
-            </div>
-            <h3 class="news-title">AI在设计创意领域的应用</h3>
-            <p class="news-summary">设计师使用AI工具完成设计工作，效率提升40%，创意产出增加</p>
-            <div class="news-footer">
-                <span class="news-source">来源: TechCrunch</span>
-                <a href="https://techcrunch.com/tag/artificial-intelligence/" class="news-link" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
-            </div>
-        </div>
-        
-        <div class="news-card">
-            <div class="news-header">
-                <span class="news-category">开源社区</span>
-                <span class="news-time">2026-04-05 12:00</span>
-            </div>
-            <h3 class="news-title">开源AI模型社区持续壮大</h3>
-            <p class="news-summary">Hugging Face平台模型下载量突破记录，社区活跃度创新高</p>
-            <div class="news-footer">
-                <span class="news-source">来源: Hugging Face</span>
-                <a href="https://huggingface.co" class="news-link" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
-            </div>
-        </div>
-        
-        <div class="news-card">
-            <div class="news-header">
-                <span class="news-category">教育科技</span>
-                <span class="news-time">2026-04-05 17:15</span>
-            </div>
-            <h3 class="news-title">AI辅助个性化教育发展</h3>
-            <p class="news-summary">AI学习系统分析学生进度，提供定制化学习路径，提升学习效果</p>
-            <div class="news-footer">
-                <span class="news-source">来源: edX平台</span>
-                <a href="https://www.edx.org" class="news-link" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
-            </div>
-        </div>
-        
-        <div class="news-card">
-            <div class="news-header">
-                <span class="news-category">市场趋势</span>
-                <span class="news-time">2026-04-05 18:00</span>
-            </div>
-            <h3 class="news-title">企业AI技术投入趋势</h3>
-            <p class="news-summary">Gartner报告：85%的企业计划增加AI技术投入，重点关注自动化和数据分析</p>
-            <div class="news-footer">
-                <span class="news-source">来源: Gartner</span>
-                <a href="https://www.gartner.com/en" class="news-link" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
-            </div>
-        </div>
-        
-        <div class="news-card">
-            <div class="news-header">
-                <span class="news-category">环境科学</span>
-                <span class="news-time">2026-04-05 19:30</span>
-            </div>
-            <h3 class="news-title">AI在气候科学中的应用</h3>
-            <p class="news-summary">研究人员使用AI模型预测气候变化趋势，精度比传统方法提高30%</p>
-            <div class="news-footer">
-                <span class="news-source">来源: NASA气候</span>
-                <a href="https://climate.nasa.gov" class="news-link" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
-            </div>
-        </div>
-        
-        <div class="news-card">
-            <div class="news-header">
-                <span class="news-category">自动驾驶</span>
-                <span class="news-time">2026-04-05 20:15</span>
-            </div>
-            <h3 class="news-title">自动驾驶技术新进展</h3>
-            <p class="news-summary">特斯拉、Waymo等公司更新自动驾驶系统，安全性和可靠性进一步提升</p>
-            <div class="news-footer">
-                <span class="news-source">来源: 特斯拉AI</span>
-                <a href="https://www.tesla.com/ai" class="news-link" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
-            </div>
-        </div>
-        
+            
         </div>
         
         <div class="footer">
-            <p>🤖 由 OpenClaw 自动化系统生成 | 🚀 Netlify自动部署 | 📡 真实资讯聚合</p>
-            <p>© 2026 AI资讯日报 | 更新时间: 2026-04-05 19:34:45</p>
+            <p>🤖 由 OpenClaw 自动化系统生成 | 🚀 Netlify自动部署 | 📡 Wired RSS实时抓取</p>
+            <p>© 2026 AI资讯日报 | 更新时间: 2026-04-05 20:48:01</p>
             <p style="margin-top: 10px; font-size: 0.9rem;">
                 <a href="/" style="color: #666;">🏠 首页</a> | 
                 <a href="https://github.com/zyssky/netlify" style="color: #666;" target="_blank">🐙 源代码</a>
