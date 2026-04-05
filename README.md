@@ -41,6 +41,7 @@ netlify deploy --prod --dir=./
 ## 🌐 访问地址
 部署后将获得类似地址：
 - https://calm-tulumba-02e43d.netlify.app/
+- https://zyssky.github.io/netlify/
 
 ## 🔧 技术特点
 - 静态HTML，无需服务器
