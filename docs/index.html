@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📚 项目文档 - 智能助手工作区</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif; 
+            background: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            padding: 40px 20px; 
+        }
+        .header { 
+            background: linear-gradient(135deg, #2c5282, #4a6fa5);
+            color: white; 
+            padding: 40px; 
+            text-align: center; 
+            border-radius: 15px;
+            margin-bottom: 40px;
+        }
+        .header h1 { 
+            font-size: 2.8rem; 
+            margin-bottom: 15px;
+        }
+        .nav { 
+            display: flex; 
+            gap: 15px; 
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        .nav-link { 
+            background: white; 
+            padding: 12px 25px; 
+            border-radius: 30px; 
+            text-decoration: none; 
+            color: #4a6fa5;
+            font-weight: 600;
+            border: 2px solid #4a6fa5;
+            transition: all 0.3s;
+        }
+        .nav-link:hover { 
+            background: #4a6fa5; 
+            color: white;
+        }
+        .coming-soon {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 50px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+        .coming-soon h2 {
+            color: #4a6fa5;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+        .project-card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        .project-card h3 {
+            color: #2c5282;
+            margin-bottom: 15px;
+        }
+        .project-status {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin: 10px 0;
+        }
+        .status-planned {
+            background: #fff3cd;
+            color: #856404;
+        }
+        .status-in-progress {
+            background: #d1ecf1;
+            color: #0c5460;
+        }
+        .status-completed {
+            background: #d4edda;
+            color: #155724;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 80px;
+            padding: 30px;
+            color: #666;
+            border-top: 1px solid #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📚 项目文档</h1>
+            <p>OpenClaw及其他自动化项目的技术文档和配置指南</p>
+        </div>
+        
+        <div class="nav">
+            <a href="/" class="nav-link">🏠 返回首页</a>
+            <a href="/ai-news/" class="nav-link">📰 AI资讯日报</a>
+            <a href="/tools/" class="nav-link">🔧 工具资源</a>
+            <a href="/ideas/" class="nav-link">💡 创意想法</a>
+        </div>
+        
+        <div class="coming-soon">
+            <h2>🚧 文档中心建设中</h2>
+            <p>项目文档正在整理和编写中，将包含详细的技术指南、配置说明和开发文档。</p>
+            <p style="margin-top: 15px; color: #666;">预计上线时间: 2026年4月</p>
+        </div>
+        
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>🤖 OpenClaw配置指南</h3>
+                <p>详细的OpenClaw安装、配置和使用指南，包含Docker部署和环境变量配置。</p>
+                <div class="project-status status-in-progress">编写中</div>
+            </div>
+            
+            <div class="project-card">
+                <h3>📰 资讯自动化系统文档</h3>
+                <p>AI资讯日报系统的架构设计、数据源配置和自动化部署文档。</p>
+                <div class="project-status status-completed">已完成</div>
+            </div>
+            
+            <div class="project-card">
+                <h3>🔧 工具链配置手册</h3>
+                <p>开发工具、自动化脚本和效率工具的使用和配置指南。</p>
+                <div class="project-status status-planned">规划中</div>
+            </div>
+            
+            <div class="project-card">
+                <h3>💡 创意项目管理</h3>
+                <p>各种创意想法的记录、评估和实施文档。</p>
+                <div class="project-status status-planned">规划中</div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>🤖 由 OpenClaw AI 助手维护 | 🚀 Netlify自动部署 | 📚 文档持续更新</p>
+            <p>📅 最后更新: 2026-04-05 19:35:00</p>
+        </div>
+    </div>
+</body>
+</html>

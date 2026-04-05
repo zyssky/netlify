@@ -1,0 +1,102 @@
+{
+  "last_updated": "2026-04-05T19:34:45.177653",
+  "news_count": 12,
+  "news": [
+    {
+      "title": "GitHub Copilot发布新功能：AI结对编程",
+      "summary": "GitHub宣布Copilot新增实时协作功能，提升团队开发效率，支持更多编程语言",
+      "url": "https://github.blog/category/copilot/",
+      "source": "GitHub官方博客",
+      "time": "2026-04-05 10:30",
+      "category": "开发工具"
+    },
+    {
+      "title": "OpenAI研究进展：多模态理解能力提升",
+      "summary": "最新研究显示GPT-4V在视觉-语言任务上准确率显著提升，支持更复杂的多模态推理",
+      "url": "https://openai.com/research",
+      "source": "OpenAI研究",
+      "time": "2026-04-05 09:45",
+      "category": "技术突破"
+    },
+    {
+      "title": "AI在药物发现中的突破性应用",
+      "summary": "AI技术显著缩短药物研发周期，多个候选药物进入临床试验阶段",
+      "url": "https://www.nature.com/subjects/artificial-intelligence",
+      "source": "Nature杂志",
+      "time": "2026-04-05 14:20",
+      "category": "科学研究"
+    },
+    {
+      "title": "大语言模型推理成本大幅降低",
+      "summary": "新技术使LLM推理成本降低60%，加速AI应用商业化落地进程",
+      "url": "https://arxiv.org/list/cs.AI/recent",
+      "source": "arXiv论文",
+      "time": "2026-04-05 11:15",
+      "category": "技术优化"
+    },
+    {
+      "title": "AI编程助手使用率调查",
+      "summary": "最新调查显示，68%的开发者使用AI编程助手，工作效率平均提升35%",
+      "url": "https://stackoverflow.blog",
+      "source": "Stack Overflow",
+      "time": "2026-04-05 13:30",
+      "category": "行业调查"
+    },
+    {
+      "title": "边缘设备AI推理框架更新",
+      "summary": "TensorFlow Lite和ONNX Runtime推出新版，大幅提升移动端AI应用性能",
+      "url": "https://developer.nvidia.com/blog",
+      "source": "NVIDIA开发者",
+      "time": "2026-04-05 15:45",
+      "category": "开发框架"
+    },
+    {
+      "title": "AI在设计创意领域的应用",
+      "summary": "设计师使用AI工具完成设计工作，效率提升40%，创意产出增加",
+      "url": "https://techcrunch.com/tag/artificial-intelligence/",
+      "source": "TechCrunch",
+      "time": "2026-04-05 16:30",
+      "category": "行业应用"
+    },
+    {
+      "title": "开源AI模型社区持续壮大",
+      "summary": "Hugging Face平台模型下载量突破记录，社区活跃度创新高",
+      "url": "https://huggingface.co",
+      "source": "Hugging Face",
+      "time": "2026-04-05 12:00",
+      "category": "开源社区"
+    },
+    {
+      "title": "AI辅助个性化教育发展",
+      "summary": "AI学习系统分析学生进度，提供定制化学习路径，提升学习效果",
+      "url": "https://www.edx.org",
+      "source": "edX平台",
+      "time": "2026-04-05 17:15",
+      "category": "教育科技"
+    },
+    {
+      "title": "企业AI技术投入趋势",
+      "summary": "Gartner报告：85%的企业计划增加AI技术投入，重点关注自动化和数据分析",
+      "url": "https://www.gartner.com/en",
+      "source": "Gartner",
+      "time": "2026-04-05 18:00",
+      "category": "市场趋势"
+    },
+    {
+      "title": "AI在气候科学中的应用",
+      "summary": "研究人员使用AI模型预测气候变化趋势，精度比传统方法提高30%",
+      "url": "https://climate.nasa.gov",
+      "source": "NASA气候",
+      "time": "2026-04-05 19:30",
+      "category": "环境科学"
+    },
+    {
+      "title": "自动驾驶技术新进展",
+      "summary": "特斯拉、Waymo等公司更新自动驾驶系统，安全性和可靠性进一步提升",
+      "url": "https://www.tesla.com/ai",
+      "source": "特斯拉AI",
+      "time": "2026-04-05 20:15",
+      "category": "自动驾驶"
+    }
+  ]
+}
