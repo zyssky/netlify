@@ -5,10 +5,11 @@
 [build.environment]
   NODE_VERSION = "18"
 
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+# 删除错误的全局重定向，让各目录的 index.html 正常访问
+# [[redirects]]
+#   from = "/*"
+#   to = "/index.html"
+#   status = 200
 
 [[headers]]
   for = "/*"
