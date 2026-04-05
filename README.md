@@ -40,8 +40,7 @@ netlify deploy --prod --dir=./
 
 ## 🌐 访问地址
 部署后将获得类似地址：
-- https://your-site-name.netlify.app/
-- https://your-site-name.netlify.app/2026-04-05/
+- https://calm-tulumba-02e43d.netlify.app/
 
 ## 🔧 技术特点
 - 静态HTML，无需服务器
