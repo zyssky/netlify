@@ -1,86 +1,112 @@
 {
-  "last_updated": "2026-04-05T20:48:01.196801",
-  "news_count": 10,
+  "last_updated": "2026-04-05T22:24:48.313095",
+  "news_count": 15,
+  "topic": "ai",
   "news": [
     {
-      "title": "Hackers Are Posting the Claude Code Leak With Bonus Malware",
-      "url": "https://www.wired.com/story/security-news-this-week-hackers-are-posting-the-claude-code-leak-with-bonus-malware/",
-      "summary": "Plus: The FBI says a recent hack of its wiretap tools poses a national security risk, attackers stole Cisco source code as part of an ongoing supply chain hacking spree, and more.",
-      "source": "Wired",
-      "time": "2026-04-04 10:30",
-      "category": "安全动态"
+      "title": "申请的报道",
+      "url": "https://example.com/seek-report-new?tabKey=2",
+      "source": "36氪",
+      "time": "2026-04-05 22:24",
+      "summary": ""
     },
     {
-      "title": "Meta Pauses Work With Mercor After Data Breach Puts AI Industry Secrets at Risk",
-      "url": "https://www.wired.com/story/meta-pauses-work-with-mercor-after-data-breach-puts-ai-industry-secrets-at-risk/",
-      "summary": "Major AI labs are investigating a security incident that impacted Mercor, a leading data vendor. The incident could have exposed key data about how they train AI models.",
-      "source": "Wired",
-      "time": "2026-04-03 21:28",
-      "category": "商业资讯"
+      "title": "算力基建提速，电子玻纤布又要起飞了？",
+      "url": "https://example.com/p/3753630523294472",
+      "source": "36氪",
+      "time": "2026-04-05 22:24",
+      "summary": ""
     },
     {
-      "title": "OpenAI’s Fidji Simo Is Taking Medical Leave Amid an Executive Shake-Up",
-      "url": "https://www.wired.com/story/openais-fidji-simo-is-taking-a-leave-of-absence/",
-      "summary": "The company is undergoing major leadership restructuring as its CEO of AGI deployment goes on leave for “several weeks.”",
-      "source": "Wired",
-      "time": "2026-04-03 19:38",
-      "category": "商业资讯"
+      "title": "高端需求全面爆发",
+      "url": "https://example.com/p/3753630523294472",
+      "source": "36氪",
+      "time": "2026-04-05 22:24",
+      "summary": ""
     },
     {
-      "title": "The 3 Best Portable Jump Starters in 2026: Get Charged Up",
-      "url": "https://www.wired.com/story/best-portable-jump-starters/",
-      "summary": "The new crop of portable jump starters means you'll never be stuck waiting on a tow. Here are the devices we'd trust.",
-      "source": "Wired",
-      "time": "2026-04-03 10:39",
-      "category": "产品评测"
+      "title": "社交媒体撕裂的世界，能被ChatGPT们缝合吗？",
+      "url": "https://example.com/p/3753449545445896",
+      "source": "36氪",
+      "time": "2026-04-05 22:24",
+      "summary": ""
     },
     {
-      "title": "‘Uncanny Valley’: Iran’s Threats on US Tech, Trump’s Plans for Midterms, and Polymarket’s Pop-up Flop",
-      "url": "https://www.wired.com/story/uncanny-valley-podcast-iran-targets-us-tech-polymarket-pop-up-trump-midterms/",
-      "summary": "In this episode, we discuss Iran’s threats to target US tech firms, gear up for the midterm elections, and get a scene report from the Polymarket pop-up bar in DC.",
-      "source": "Wired",
-      "time": "2026-04-02 21:04",
-      "category": "安全动态"
+      "title": "谎言不需要伪装，只需要被当作答案说出来。",
+      "url": "https://example.com/p/3753449545445896",
+      "source": "36氪",
+      "time": "2026-04-05 22:24",
+      "summary": ""
     },
     {
-      "title": "OpenAI Acquires Tech Talk Show ‘TBPN’—and Buys Itself Some Positive News",
-      "url": "https://www.wired.com/story/openai-acquires-tbpn-buys-positive-news-coverage/",
-      "summary": "OpenAI is acquiring TBPN, a business talk show that’s popular among Silicon Valley elites, as it continues to battle its negative public image.",
-      "source": "Wired",
-      "time": "2026-04-02 19:29",
-      "category": "商业资讯"
+      "title": "活动/榜单/专题",
+      "url": "https://example.com/activity/",
+      "source": "虎嗅",
+      "time": "2026-04-05 22:24",
+      "summary": ""
     },
     {
-      "title": "A New Google-Funded Data Center Will Be Powered by a Massive Gas Plant",
-      "url": "https://www.wired.com/story/a-new-google-funded-data-center-will-be-powered-by-a-massive-gas-plant/",
-      "summary": "Documents show that one of Google’s new data centers would be powered by a natural gas plant that emits millions of tons of emissions each year—an increasingly common trend in the industry.",
-      "source": "Wired",
-      "time": "2026-04-02 18:27",
-      "category": "科学研究"
+      "title": "经济观察报观察家",
+      "url": "https://example.com/member/2147218.html",
+      "source": "虎嗅",
+      "time": "2026-04-05 22:24",
+      "summary": ""
     },
     {
-      "title": "Cursor Launches a New AI Agent Experience to Take On Claude Code and Codex",
-      "url": "https://www.wired.com/story/cusor-launches-coding-agent-openai-anthropic/",
-      "summary": "As Cursor launches the next generation of its product, the AI coding startup has to compete with OpenAI and Anthropic more directly than ever.",
-      "source": "Wired",
-      "time": "2026-04-02 17:00",
-      "category": "商业资讯"
+      "title": "职业餐饮网",
+      "url": "https://example.com/member/3338253.html",
+      "source": "虎嗅",
+      "time": "2026-04-05 22:24",
+      "summary": ""
     },
     {
-      "title": "Anthropic Says That Claude Contains Its Own Kind of Emotions",
-      "url": "https://www.wired.com/story/anthropic-claude-research-functional-emotions/",
-      "summary": "Researchers at the company found representations inside of Claude that perform functions similar to human feelings.",
-      "source": "Wired",
-      "time": "2026-04-02 16:00",
-      "category": "商业资讯"
+      "title": "游云庭律师",
+      "url": "https://example.com/member/16022.html",
+      "source": "虎嗅",
+      "time": "2026-04-05 22:24",
+      "summary": ""
     },
     {
-      "title": "AI Models Lie, Cheat, and Steal to Protect Other Models From Being Deleted",
-      "url": "https://www.wired.com/story/ai-models-lie-cheat-steal-protect-other-models-research/",
-      "summary": "A new study from researchers at UC Berkeley and UC Santa Cruz suggests models will disobey human commands to protect their own kind.",
-      "source": "Wired",
-      "time": "2026-04-01 18:30",
-      "category": "商业资讯"
+      "title": "凤凰网财经",
+      "url": "https://example.com/member/2590173.html",
+      "source": "虎嗅",
+      "time": "2026-04-05 22:24",
+      "summary": ""
+    },
+    {
+      "title": "AI 视频生成的战场如何从「模型秀场」转向「工作流」？",
+      "url": "https://pro.jiqizhixin.com/reference/5f14ae3d-1abf-42d5-b589-d5a79aba3515",
+      "source": "机器之心",
+      "time": "2026-04-05 22:24",
+      "summary": ""
+    },
+    {
+      "title": "走出网页和 App 后，消费级 AI 应用的实力该如何衡量？",
+      "url": "https://pro.jiqizhixin.com/reference/3cde4428-1102-4eaf-8860-cd9e65f6b1b7",
+      "source": "机器之心",
+      "time": "2026-04-05 22:24",
+      "summary": ""
+    },
+    {
+      "title": "更高权限的 AI Agent 需要怎样的 AI Infra？",
+      "url": "https://pro.jiqizhixin.com/reference/e2d2143f-d160-4756-88b1-966801a41a4b",
+      "source": "机器之心",
+      "time": "2026-04-05 22:24",
+      "summary": ""
+    },
+    {
+      "title": "PRO通讯会员",
+      "url": "https://pro.jiqizhixin.com/inbox",
+      "source": "机器之心",
+      "time": "2026-04-05 22:24",
+      "summary": ""
+    },
+    {
+      "title": "SOTA！模型",
+      "url": "https://www.jiqizhixin.com/short_urls/1c9524be-37f8-4b87-b6e4-318aae2f7656",
+      "source": "机器之心",
+      "time": "2026-04-05 22:24",
+      "summary": ""
     }
   ]
 }

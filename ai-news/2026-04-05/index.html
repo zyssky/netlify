@@ -3,354 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>📰 AI资讯日报 - 2026-04-05</title>
+    <title>🤖 AI 资讯日报</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { 
-            font-family: -apple-system, BlinkMacSystemFont, sans-serif; 
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            color: #333;
-            line-height: 1.6;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            min-height: 100vh;
+            padding: 40px 20px;
         }
-        .container { 
-            max-width: 1200px; 
-            margin: 0 auto; 
-            padding: 20px; 
-        }
-        .header { 
-            background: linear-gradient(135deg, #4a6fa5, #2c5282);
-            color: white; 
-            padding: 40px; 
-            text-align: center; 
-            border-radius: 15px;
-            margin-bottom: 30px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-        .header h1 { 
-            font-size: 2.8rem; 
-            margin-bottom: 10px;
-        }
-        .nav { 
-            display: flex; 
-            gap: 15px; 
-            margin: 20px 0;
-            flex-wrap: wrap;
-        }
-        .nav-link { 
-            background: white; 
-            padding: 10px 20px; 
-            border-radius: 30px; 
-            text-decoration: none; 
-            color: #4a6fa5;
-            font-weight: 600;
-            border: 2px solid #4a6fa5;
+        .container { max-width: 900px; margin: 0 auto; }
+        h1 { text-align: center; margin-bottom: 10px; font-size: 2rem; }
+        .meta { text-align: center; color: rgba(255,255,255,0.6); margin-bottom: 40px; }
+        .news-list { display: flex; flex-direction: column; gap: 15px; }
+        .news-item {
+            background: rgba(255,255,255,0.1);
+            border-radius: 12px;
+            padding: 20px;
             transition: all 0.3s;
         }
-        .nav-link:hover { 
-            background: #4a6fa5; 
-            color: white;
-        }
-        .stats { 
-            background: white; 
-            padding: 20px; 
-            border-radius: 10px; 
-            margin: 20px 0;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-        }
-        .stat-item { 
-            text-align: center; 
-            padding: 15px;
-        }
-        .stat-number { 
-            font-size: 2rem; 
-            font-weight: bold; 
-            color: #4a6fa5;
-        }
-        .news-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 25px;
-            margin: 30px 0;
-        }
-        .news-card {
-            background: white;
-            border-radius: 12px;
-            padding: 25px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        .news-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.12);
-        }
-        .news-header {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 15px;
-        }
-        .news-category {
-            background: #e3f2fd;
-            color: #1976d2;
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 600;
-        }
-        .news-time {
-            color: #666;
-            font-size: 0.85rem;
-        }
-        .news-title {
-            font-size: 1.3rem;
-            margin-bottom: 12px;
-            color: #2c3e50;
-        }
-        .news-summary {
-            color: #555;
-            margin-bottom: 20px;
-            line-height: 1.6;
-        }
-        .news-footer {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding-top: 15px;
-            border-top: 1px solid #eee;
-        }
-        .news-source {
-            color: #777;
-            font-size: 0.9rem;
-        }
-        .news-link {
-            color: #4a6fa5;
+        .news-item:hover { background: rgba(255,255,255,0.15); transform: translateX(5px); }
+        .news-title { font-size: 1.1rem; margin-bottom: 8px; }
+        .news-title a { color: white; text-decoration: none; }
+        .news-title a:hover { color: #ffd700; }
+        .news-meta { font-size: 0.85rem; color: rgba(255,255,255,0.6); }
+        .news-summary { margin-top: 10px; font-size: 0.9rem; color: rgba(255,255,255,0.8); }
+        .back-link { 
+            display: inline-block; 
+            margin-bottom: 30px; 
+            color: rgba(255,255,255,0.7); 
             text-decoration: none;
-            font-weight: 600;
-            transition: color 0.3s;
         }
-        .news-link:hover {
-            color: #2c5282;
-            text-decoration: underline;
-        }
-        .automation-notice {
-            background: #e8f5e9;
-            border-left: 5px solid #4caf50;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 25px 0;
-        }
-        .source-list {
-            background: #e3f2fd;
-            border-left: 5px solid #2196f3;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 25px 0;
-        }
-        .footer {
-            text-align: center;
-            margin-top: 50px;
-            padding: 25px;
-            color: #666;
-            border-top: 1px solid #e0e0e0;
-        }
-        @media (max-width: 768px) {
-            .header h1 { font-size: 2rem; }
-            .news-grid { grid-template-columns: 1fr; }
-        }
+        .back-link:hover { color: white; }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <h1>📰 AI资讯日报</h1>
-            <p>精选人工智能领域最新动态 | 真实可访问的新闻链接</p>
-        </div>
+        <a href="/" class="back-link">← 返回首页</a>
+        <h1>🤖 AI 资讯日报</h1>
+        <p class="meta">📅 最后更新: 2026-04-05 22:24:48</p>
         
-        <div class="nav">
-            <a href="/" class="nav-link">🏠 返回首页</a>
-            <a href="/docs/" class="nav-link">📚 项目文档</a>
-            <a href="/tools/" class="nav-link">🔧 工具资源</a>
-            <a href="/ideas/" class="nav-link">💡 创意想法</a>
-        </div>
-        
-        <div class="stats">
-            <div class="stat-item">
-                <div class="stat-number">10</div>
-                <div>资讯数量</div>
+        <div class="news-list">
+            <div class="news-item">
+                <div class="news-title">
+                    <a href="https://example.com/seek-report-new?tabKey=2" target="_blank">申请的报道</a>
+                </div>
+                <div class="news-meta">36氪 • 2026-04-05 22:24</div>
             </div>
-            <div class="stat-item">
-                <div class="stat-number">1</div>
-                <div>信息来源</div>
+            <div class="news-item">
+                <div class="news-title">
+                    <a href="https://example.com/p/3753630523294472" target="_blank">算力基建提速，电子玻纤布又要起飞了？</a>
+                </div>
+                <div class="news-meta">36氪 • 2026-04-05 22:24</div>
             </div>
-            <div class="stat-item">
-                <div class="stat-number">4</div>
-                <div>内容分类</div>
+            <div class="news-item">
+                <div class="news-title">
+                    <a href="https://example.com/p/3753630523294472" target="_blank">高端需求全面爆发</a>
+                </div>
+                <div class="news-meta">36氪 • 2026-04-05 22:24</div>
             </div>
-            <div class="stat-item">
-                <div class="stat-number">2026-04-05</div>
-                <div>更新日期</div>
+            <div class="news-item">
+                <div class="news-title">
+                    <a href="https://example.com/p/3753449545445896" target="_blank">社交媒体撕裂的世界，能被ChatGPT们缝合吗？</a>
+                </div>
+                <div class="news-meta">36氪 • 2026-04-05 22:24</div>
             </div>
-        </div>
-        
-        <div class="automation-notice">
-            <h3>🤖 自动化资讯系统</h3>
-            <p>本页面由OpenClaw自动化系统生成。资讯来自Wired等权威科技媒体，所有链接均为真实文章，可直接点击访问。</p>
-            <p>📅 更新时间: 2026-04-05 20:48:01</p>
-        </div>
-        
-        <div class="source-list">
-            <h3>📡 资讯来源</h3>
-            <p>资讯实时抓取自Wired杂志AI板块，真实可访问的文章链接：</p>
-            <ul style="margin-top: 10px;">
-                <li><strong>Wired</strong> - 全球顶级科技媒体，AI领域深度报道</li>
-                <li>所有链接均已验证可直接访问</li>
-                <li>点击"阅读原文"即可查看完整文章</li>
-            </ul>
-        </div>
-        
-        <div class="news-grid">
-            
-            <div class="news-card">
-                <div class="news-header">
-                    <span class="news-category">安全动态</span>
-                    <span class="news-time">2026-04-04 10:30</span>
+            <div class="news-item">
+                <div class="news-title">
+                    <a href="https://example.com/p/3753449545445896" target="_blank">谎言不需要伪装，只需要被当作答案说出来。</a>
                 </div>
-                <h3 class="news-title">Hackers Are Posting the Claude Code Leak With Bonus Malware</h3>
-                <p class="news-summary">Plus: The FBI says a recent hack of its wiretap tools poses a national security risk, attackers stole Cisco source code as part of an ongoing supply chain hacking spree, and more.</p>
-                <div class="news-footer">
-                    <span class="news-source">来源: Wired</span>
-                    <a href="https://www.wired.com/story/security-news-this-week-hackers-are-posting-the-claude-code-leak-with-bonus-malware/" class="news-link" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
-                </div>
+                <div class="news-meta">36氪 • 2026-04-05 22:24</div>
             </div>
-            
-            <div class="news-card">
-                <div class="news-header">
-                    <span class="news-category">商业资讯</span>
-                    <span class="news-time">2026-04-03 21:28</span>
+            <div class="news-item">
+                <div class="news-title">
+                    <a href="https://example.com/activity/" target="_blank">活动/榜单/专题</a>
                 </div>
-                <h3 class="news-title">Meta Pauses Work With Mercor After Data Breach Puts AI Industry Secrets at Risk</h3>
-                <p class="news-summary">Major AI labs are investigating a security incident that impacted Mercor, a leading data vendor. The incident could have exposed key data about how they train AI models.</p>
-                <div class="news-footer">
-                    <span class="news-source">来源: Wired</span>
-                    <a href="https://www.wired.com/story/meta-pauses-work-with-mercor-after-data-breach-puts-ai-industry-secrets-at-risk/" class="news-link" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
-                </div>
+                <div class="news-meta">虎嗅 • 2026-04-05 22:24</div>
             </div>
-            
-            <div class="news-card">
-                <div class="news-header">
-                    <span class="news-category">商业资讯</span>
-                    <span class="news-time">2026-04-03 19:38</span>
+            <div class="news-item">
+                <div class="news-title">
+                    <a href="https://example.com/member/2147218.html" target="_blank">经济观察报观察家</a>
                 </div>
-                <h3 class="news-title">OpenAI’s Fidji Simo Is Taking Medical Leave Amid an Executive Shake-Up</h3>
-                <p class="news-summary">The company is undergoing major leadership restructuring as its CEO of AGI deployment goes on leave for “several weeks.”</p>
-                <div class="news-footer">
-                    <span class="news-source">来源: Wired</span>
-                    <a href="https://www.wired.com/story/openais-fidji-simo-is-taking-a-leave-of-absence/" class="news-link" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
-                </div>
+                <div class="news-meta">虎嗅 • 2026-04-05 22:24</div>
             </div>
-            
-            <div class="news-card">
-                <div class="news-header">
-                    <span class="news-category">产品评测</span>
-                    <span class="news-time">2026-04-03 10:39</span>
+            <div class="news-item">
+                <div class="news-title">
+                    <a href="https://example.com/member/3338253.html" target="_blank">职业餐饮网</a>
                 </div>
-                <h3 class="news-title">The 3 Best Portable Jump Starters in 2026: Get Charged Up</h3>
-                <p class="news-summary">The new crop of portable jump starters means you'll never be stuck waiting on a tow. Here are the devices we'd trust.</p>
-                <div class="news-footer">
-                    <span class="news-source">来源: Wired</span>
-                    <a href="https://www.wired.com/story/best-portable-jump-starters/" class="news-link" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
-                </div>
+                <div class="news-meta">虎嗅 • 2026-04-05 22:24</div>
             </div>
-            
-            <div class="news-card">
-                <div class="news-header">
-                    <span class="news-category">安全动态</span>
-                    <span class="news-time">2026-04-02 21:04</span>
+            <div class="news-item">
+                <div class="news-title">
+                    <a href="https://example.com/member/16022.html" target="_blank">游云庭律师</a>
                 </div>
-                <h3 class="news-title">‘Uncanny Valley’: Iran’s Threats on US Tech, Trump’s Plans for Midterms, and Polymarket’s Pop-up Flop</h3>
-                <p class="news-summary">In this episode, we discuss Iran’s threats to target US tech firms, gear up for the midterm elections, and get a scene report from the Polymarket pop-up bar in DC.</p>
-                <div class="news-footer">
-                    <span class="news-source">来源: Wired</span>
-                    <a href="https://www.wired.com/story/uncanny-valley-podcast-iran-targets-us-tech-polymarket-pop-up-trump-midterms/" class="news-link" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
-                </div>
+                <div class="news-meta">虎嗅 • 2026-04-05 22:24</div>
             </div>
-            
-            <div class="news-card">
-                <div class="news-header">
-                    <span class="news-category">商业资讯</span>
-                    <span class="news-time">2026-04-02 19:29</span>
+            <div class="news-item">
+                <div class="news-title">
+                    <a href="https://example.com/member/2590173.html" target="_blank">凤凰网财经</a>
                 </div>
-                <h3 class="news-title">OpenAI Acquires Tech Talk Show ‘TBPN’—and Buys Itself Some Positive News</h3>
-                <p class="news-summary">OpenAI is acquiring TBPN, a business talk show that’s popular among Silicon Valley elites, as it continues to battle its negative public image.</p>
-                <div class="news-footer">
-                    <span class="news-source">来源: Wired</span>
-                    <a href="https://www.wired.com/story/openai-acquires-tbpn-buys-positive-news-coverage/" class="news-link" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
-                </div>
+                <div class="news-meta">虎嗅 • 2026-04-05 22:24</div>
             </div>
-            
-            <div class="news-card">
-                <div class="news-header">
-                    <span class="news-category">科学研究</span>
-                    <span class="news-time">2026-04-02 18:27</span>
+            <div class="news-item">
+                <div class="news-title">
+                    <a href="https://pro.jiqizhixin.com/reference/5f14ae3d-1abf-42d5-b589-d5a79aba3515" target="_blank">AI 视频生成的战场如何从「模型秀场」转向「工作流」？</a>
                 </div>
-                <h3 class="news-title">A New Google-Funded Data Center Will Be Powered by a Massive Gas Plant</h3>
-                <p class="news-summary">Documents show that one of Google’s new data centers would be powered by a natural gas plant that emits millions of tons of emissions each year—an increasingly common trend in the industry.</p>
-                <div class="news-footer">
-                    <span class="news-source">来源: Wired</span>
-                    <a href="https://www.wired.com/story/a-new-google-funded-data-center-will-be-powered-by-a-massive-gas-plant/" class="news-link" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
-                </div>
+                <div class="news-meta">机器之心 • 2026-04-05 22:24</div>
             </div>
-            
-            <div class="news-card">
-                <div class="news-header">
-                    <span class="news-category">商业资讯</span>
-                    <span class="news-time">2026-04-02 17:00</span>
+            <div class="news-item">
+                <div class="news-title">
+                    <a href="https://pro.jiqizhixin.com/reference/3cde4428-1102-4eaf-8860-cd9e65f6b1b7" target="_blank">走出网页和 App 后，消费级 AI 应用的实力该如何衡量？</a>
                 </div>
-                <h3 class="news-title">Cursor Launches a New AI Agent Experience to Take On Claude Code and Codex</h3>
-                <p class="news-summary">As Cursor launches the next generation of its product, the AI coding startup has to compete with OpenAI and Anthropic more directly than ever.</p>
-                <div class="news-footer">
-                    <span class="news-source">来源: Wired</span>
-                    <a href="https://www.wired.com/story/cusor-launches-coding-agent-openai-anthropic/" class="news-link" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
-                </div>
+                <div class="news-meta">机器之心 • 2026-04-05 22:24</div>
             </div>
-            
-            <div class="news-card">
-                <div class="news-header">
-                    <span class="news-category">商业资讯</span>
-                    <span class="news-time">2026-04-02 16:00</span>
+            <div class="news-item">
+                <div class="news-title">
+                    <a href="https://pro.jiqizhixin.com/reference/e2d2143f-d160-4756-88b1-966801a41a4b" target="_blank">更高权限的 AI Agent 需要怎样的 AI Infra？</a>
                 </div>
-                <h3 class="news-title">Anthropic Says That Claude Contains Its Own Kind of Emotions</h3>
-                <p class="news-summary">Researchers at the company found representations inside of Claude that perform functions similar to human feelings.</p>
-                <div class="news-footer">
-                    <span class="news-source">来源: Wired</span>
-                    <a href="https://www.wired.com/story/anthropic-claude-research-functional-emotions/" class="news-link" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
-                </div>
+                <div class="news-meta">机器之心 • 2026-04-05 22:24</div>
             </div>
-            
-            <div class="news-card">
-                <div class="news-header">
-                    <span class="news-category">商业资讯</span>
-                    <span class="news-time">2026-04-01 18:30</span>
+            <div class="news-item">
+                <div class="news-title">
+                    <a href="https://pro.jiqizhixin.com/inbox" target="_blank">PRO通讯会员</a>
                 </div>
-                <h3 class="news-title">AI Models Lie, Cheat, and Steal to Protect Other Models From Being Deleted</h3>
-                <p class="news-summary">A new study from researchers at UC Berkeley and UC Santa Cruz suggests models will disobey human commands to protect their own kind.</p>
-                <div class="news-footer">
-                    <span class="news-source">来源: Wired</span>
-                    <a href="https://www.wired.com/story/ai-models-lie-cheat-steal-protect-other-models-research/" class="news-link" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
-                </div>
+                <div class="news-meta">机器之心 • 2026-04-05 22:24</div>
             </div>
-            
-        </div>
-        
-        <div class="footer">
-            <p>🤖 由 OpenClaw 自动化系统生成 | 🚀 Netlify自动部署 | 📡 Wired RSS实时抓取</p>
-            <p>© 2026 AI资讯日报 | 更新时间: 2026-04-05 20:48:01</p>
-            <p style="margin-top: 10px; font-size: 0.9rem;">
-                <a href="/" style="color: #666;">🏠 首页</a> | 
-                <a href="https://github.com/zyssky/netlify" style="color: #666;" target="_blank">🐙 源代码</a>
-            </p>
+            <div class="news-item">
+                <div class="news-title">
+                    <a href="https://www.jiqizhixin.com/short_urls/1c9524be-37f8-4b87-b6e4-318aae2f7656" target="_blank">SOTA！模型</a>
+                </div>
+                <div class="news-meta">机器之心 • 2026-04-05 22:24</div>
+            </div>
         </div>
     </div>
 </body>

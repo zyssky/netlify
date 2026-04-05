@@ -1,0 +1,128 @@
+# 资讯源配置文件
+# 按主题分类，支持快速扩展新主题
+
+## AI 资讯源（国内视角）
+ai:
+  # 中文科技媒体
+  - name: "36kr"
+    url: "https://www.36kr.com/information/AI/"
+    type: "rss"
+    language: "zh"
+    
+  - name: "雷锋网"
+    url: "https://www.leiphone.com/category/ai"
+    type: "web"
+    language: "zh"
+    
+  - name: "虎嗅"
+    url: "https://www.huxiu.com/channel/103.html"
+    type: "web"
+    language: "zh"
+    
+  - name: "机器之心"
+    url: "https://www.jiqizhixin.com/"
+    type: "web"
+    language: "zh"
+    
+  - name: "极客公园"
+    url: "https://www.geekpark.net/channel/77"
+    type: "web"
+    language: "zh"
+    
+  # 科技巨头博客
+  - name: "百度 AI"
+    url: "https://ai.baidu.com/"
+    type: "web"
+    language: "zh"
+    
+  - name: "阿里云 AI"
+    url: "https://ai.aliyun.com/"
+    type: "web"
+    language: "zh"
+    
+  # 英文源（国内可访问）
+  - name: "Wired AI"
+    url: "https://www.wired.com/tag/ai/"
+    type: "web"
+    language: "en"
+    
+  - name: "TechCrunch AI"
+    url: "https://techcrunch.com/category/artificial-intelligence/"
+    type: "web"
+    language: "en"
+
+## 伊朗战争资讯
+iran_war:
+  # 国内主流媒体
+  - name: "新华社"
+    url: "https://www.xinhuanet.com/world/"
+    type: "web"
+    language: "zh"
+    keywords: ["伊朗", "中东", "以色列", "战争"]
+    
+  - name: "环球网"
+    url: "https://world.huanqiu.com/"
+    type: "web"
+    language: "zh"
+    keywords: ["伊朗", "中东", "以色列"]
+    
+  - name: "人民网国际"
+    url: "http://world.people.com.cn/GB/1039/index.html"
+    type: "web"
+    language: "zh"
+    keywords: ["伊朗", "中东"]
+    
+  - name: "央视新闻"
+    url: "https://news.cctv.com/world"
+    type: "web"
+    language: "zh"
+    keywords: ["伊朗", "中东"]
+    
+  # 国际媒体（国内可访问）
+  - name: "参考消息"
+    url: "https://www.cankaoxiaoxi.com/"
+    type: "web"
+    language: "zh"
+    keywords: ["伊朗", "中东"]
+    
+  - name: "BBC 中文"
+    url: "https://www.bbc.com/zhongwen/simp"
+    type: "web"
+    language: "zh"
+    keywords: ["伊朗", "中东"]
+    
+  - name: "半岛电视台中文"
+    url: "https://chinese.aljazeera.net/"
+    type: "web"
+    language: "zh"
+    keywords: ["伊朗", "中东"]
+    
+  # 分析评论
+  - name: "观察者网"
+    url: "https://www.guancha.cn/international"
+    type: "web"
+    language: "zh"
+    keywords: ["伊朗", "中东", "以色列"]
+    
+  - name: "腾讯新闻"
+    url: "https://news.qq.com/
+    type: "web"
+    language: "zh"
+    keywords: ["伊朗", "中东"]
+
+# 抓取配置
+config:
+  # 抓取间隔（分钟）
+  interval: 30
+  
+  # 并发抓取数
+  concurrency: 3
+  
+  # 重试次数
+  retry: 3
+  
+  # 超时时间（秒）
+  timeout: 30
+  
+  # User-Agent
+  user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
